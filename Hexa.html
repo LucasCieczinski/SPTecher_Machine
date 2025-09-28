@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Estilizações/estilizaçãoGeral.css">
+    <link rel="stylesheet" href="Estilizações/StyleResults.css">
+</head>
+<body bgcolor="#00ffff">
+    <div class="titulo">
+        <img src="imgs/sptech_principal.png">
+        <h1>SPTecher's Machine</h1>
+        <a href="sptechers-machine.html">Inicio</a>
+    </div>
+     
+    <div class="box">
+        <div class="conteudo">
+            <h3>Digite um número Hexadecimal:</h3>
+                <input oninput="converter()" id="demo1" type="text" placeholder="Ex: 42">
+                <br><br>
+                
+                <div class="banner">
+                    <h3>Resultados:</h3>
+                    <div class="boxes">
+                    <p>Octal:
+                    <div id="demo2"></div>
+                    </p>
+                    <p>Decimal:
+                    <div id="demo3"></div>
+                    </p>
+                    <p>Binário:
+                    <div id="demo4"></div>
+                    </p>
+                    </div>
+                </div>
+        </div>
+    </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    <div class="creditos">
+        <span>Feito por: Lucas Peres</span>
+        <span>2025 ADSA</span>
+    </div>
+    
+</body>
+</html>
+<script>
+     function converter() {
+            var hexadecimal = (demo1.value);
+            var decimal = parseInt(hexadecimal, 16);
+
+            demo2.innerHTML = decimal.toString(8);
+            demo3.innerHTML = decimal.toString(10);
+            demo4.innerHTML = decimal.toString(2);
+        }
+</script>
