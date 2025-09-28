@@ -76,4 +76,6 @@ body{
     flex-direction: column;
     border-top: 3px solid #40E0D0;
     background-color: rgba(26, 26, 26, 0.9);
+    position: absolute;
+    bottom: 0;
 }
